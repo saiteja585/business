@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swagruha Organic Foods</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="images/swagruha.jpg" alt="Logo" class="logo-img" />
+        <h1 class="logo">Swagruha Organic Foods</h1>
+      </div>
+      <nav class="nav-menu">
+        <a href="#">Home</a>
+        <a href="#veg">Veg Pickles</a>
+        <a href="#nonveg">Non-Veg Pickles</a>
+        <a href="#snacks">Snacks</a>
+        <a href="#about">About Us</a>
+      </nav>
+      <input type="text" placeholder="Search items..." class="search-input" />
+    </div>
+    <marquee class="marquee">🌶️ Authentic Homemade Telangana Foods – Taste the Tradition! 🌿 Order Today! 🚚</marquee>
+  </header>
+
+  <main>
+    <section class="products-section" id="veg">
+      <h2 class="section-title">Veg Pickles</h2>
+      <div class="products">
+        <div class="product">
+          <img src="images/mango.jpg" alt="Mango Pickle" />
+          <h3>Mango Pickle</h3>
+          <p class="price">₹250 / 500g</p>
+        </div>
+        <div class="product">
+          <img src="images/lemon.jpg" alt="Lemon Pickle" />
+          <h3>Lemon Pickle</h3>
+          <p class="price">₹230 / 500g</p>
+        </div>
+        <div class="product">
+          <img src="images/tomato.jpg" alt="Tomato Pickle" />
+          <h3>Tomato Pickle</h3>
+          <p class="price">₹240 / 500g</p>
+        </div>
+        <div class="product">
+          <img src="images/allam.jpg" alt="Allam Pickle" />
+          <h3>Allam Pickle</h3>
+          <p class="price">₹260 / 500g</p>
+        </div>
+        <div class="product">
+          <img src="images/gongura.jpg" alt="Gongura Pickle" />
+          <h3>Gongura Pickle</h3>
+          <p class="price">₹270 / 500g</p>
+        </div>
+        <div class="product">
+          <img src="images/usirikaya.jpg" alt="Usirikaya Pickle" />
+          <h3>Usirikaya Pickle</h3>
+          <p class="price">₹250 / 500g</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section" id="nonveg">
+      <h2 class="section-title">Non-Veg Pickles</h2>
+      <div class="products">
+        <div class="product">
+          <img src="images/chicken.jpg" alt="Chicken Pickle" />
+          <h3>Chicken Pickle</h3>
+          <p class="price">₹450 / 500g</p>
+        </div>
+        <div class="product">
+          <img src="images/mutton.jpg" alt="Mutton Pickle" />
+          <h3>Mutton Pickle</h3>
+          <p class="price">₹480 / 500g</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section" id="snacks">
+      <h2 class="section-title">Snacks</h2>
+      <div class="products">
+        <div class="product">
+          <img src="images/chekkalu.jpg" alt="Chekkalu" />
+          <h3>Chekkalu</h3>
+          <p class="price">₹150 / 250g</p>
+        </div>
+        <div class="product">
+          <img src="images/gavvalu.jpg" alt="Gavvalu" />
+          <h3>Gavvalu</h3>
+          <p class="price">₹140 / 250g</p>
+        </div>
+        <div class="product">
+          <img src="images/karapusa.jpg" alt="Karapusa" />
+          <h3>Karapusa</h3>
+          <p class="price">₹130 / 250g</p>
+        </div>
+        <div class="product">
+          <img src="images/laddu.jpg" alt="Laddu" />
+          <h3>Laddu</h3>
+          <p class="price">₹160 / 250g</p>
+        </div>
+      </div>
+    </section>
+
+<section class="about-section" id="about">
+  <h2>About Us</h2>
+  <p>
+    Welcome to <strong>Swagruha Organic Foods</strong> – your one-stop destination for authentic, homemade Telangana foods. We offer a wide variety of traditional Veg Pickles, Non-Veg Pickles, and delicious Snacks — all made with love, care, and premium organic ingredients.
+  </p>
+  <p>
+    From spicy Mango, Lemon, and Gongura pickles to savory Chicken and Mutton pickles, and crunchy delights like Chekkalu, Gavvalu, Karapusa, and Laddu — every item reflects the rich culinary heritage of Telugu households.
+  </p>
+  <p>
+    Our mission is to bring the true taste of Telangana tradition to your plate, one jar or snack at a time. We maintain high standards of hygiene and quality, ensuring every bite is pure, flavorful, and memorable.
+  </p>
+</section>
+
+  </main>
+
+  <marquee class="bottom-marquee">🔔 <strong>Experience the Taste of Tradition. Shop Our Food Items Today!</strong> 🔔</marquee>
+
+<footer>
+  <h2>Contact Us</h2>
+  <p>📞 WhatsApp: <strong>+91-9533809594</strong></p>
+  <p>📧 Email: <strong>saiteja26111992@gmail.com</strong></p>
+  <p>💳 <strong>All UPI payments accepted</strong></p>
+  <p>📲 UPI ID / Mobile: <strong>9533809594</strong></p>
+</footer>
+
+  <script>
+    const searchInput = document.querySelector(".search-input");
+    const productCards = document.querySelectorAll(".product");
+
+    searchInput.addEventListener("input", () => {
+      const query = searchInput.value.toLowerCase();
+      productCards.forEach(card => {
+        const productName = card.querySelector("h3").textContent.toLowerCase();
+        if (productName.includes(query)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
